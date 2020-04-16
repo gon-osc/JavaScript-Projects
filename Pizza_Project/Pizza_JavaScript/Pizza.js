@@ -11,7 +11,7 @@ function getReceipt() {
             text1 = text1 + selectedSize + "<br>";
         }
     }
-    if (selectedSize === "Personal PIzza") {
+    if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
     } else if (selectedSize === "Small Pizza") {
         sizeTotal = 8;
@@ -48,7 +48,7 @@ function getTopping(runningTotal, text1) {
         toppingTotal = 0;
     }
     runningTotal = (runningTotal + toppingTotal);
-    console.log("total selected topping items: " + toppingtCount);
+    console.log("total selected topping items: " + toppingCount);
     console.log(toppingCount + " topping - 1 free topping = " + "$" + toppingTotal + " .00");
     console.log("topping text1: " + text1);
     console.log("Purchase Total: " + "$" + runningTotal + " .00");
